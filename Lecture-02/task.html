@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+
+        //Task - 1
+
+        // console.log(this);
+
+        //Task - 2
+
+        // function name(params) {
+        //     console.log(this);
+        // }
+
+        // name()
+
+        //Task - 3
+
+        // function name(params) {
+        //     console.log(this);     //undefined
+        // }
+
+        // name()
+
+        //Task - 4
+
+        // const person = {
+        //     name: "kavy",
+        //     greet: function () {
+        //         console.log("Hello, my name is " + this.name +" "+ this.age);
+        //     }
+        // };
+
+        // person.greet();
+
+        //Task - 5
+
+        // const person = {
+        //     name: "kavy",
+        //     age: 19,
+        //     course: "Full Stack Devlopment",
+        //     greet: function () {
+        //         console.log("Hello, my name is " + this.name +", I Am "+ this.age + " Year Old "+ "," + this.course);
+        //     }
+        // };
+
+        // person.greet();
+
+        //Task - 6
+
+        // const person = {
+        //     name: "Kavy",
+
+        //     greet: function () {
+        //         console.log(this.name);
+        //     }
+        // };
+
+        // let newVeriable = person.greet();
+        // newVeriable();
+
+        //Task - 7
+
+        // const person = {
+        //     name: "Kavy",
+
+        //     greet: function () {
+        //         console.log(this.name);
+        //     }
+        // };
+
+        // let newVeriable = person.greet.bind(person);
+        // newVeriable();
+
+        //Task - 8
+
+        // function fun() {
+        //     console.log(
+        //         "My name is " + this.name 
+        //     );
+        // }
+
+        // const student1 = {
+        //     name: "Kavy"
+        // };
+
+        // const student2 = {
+        //     name: "Jay"
+        // };
+
+        // fun.call(student1);
+        // fun.call(student2);
+
+        //Task - 9
+
+        // function add(a, b, c) {
+        //     console.log(a + b + c);
+        // }
+
+        // const numbers = [10, 20, 30];
+
+        // add.apply(null, numbers);
+
+        //Task - 10
+
+        // function greet() {
+        //     console.log("Hello " + this.name);
+        // }
+
+        // const person = {
+        //     name: "Rahul"
+        // };
+
+        // const boundFun = greet.bind(person);
+
+        // boundFun();
+
+
+        //Task - 11
+
+        // let obj = {
+        //     name:"Kavy",
+        //     age:19,
+        //     greet: function a() {
+        //         console.log(this.name);
+        //     },
+        //     greet1: ()=>{
+        //         console.log(this.age);
+        //     },
+        // }
+
+        // obj.greet()
+        // obj.greet1()
+
+        //Task - 12
+
+        // const person = {
+        //     name: "Kavy",
+
+        //     Name: function () {
+        //         setTimeout(() => {
+        //             console.log(this.name);
+        //         }, 1000);
+        //     }
+        // };
+
+        // person.Name();
+
+        //Task - 13
+
+
+        // const person1 = {
+        //     name: "Kavy",
+
+        //     Name:  () => {
+        //         setTimeout(() => {
+        //             console.log(this.name);
+        //         }, 1000);
+        //     }
+        // };
+
+        // person1.Name();
+
+        //Task - 14
+
+        // const person = {
+        //     name: "Kavy",
+
+        //     Name: function () {
+        //         setTimeout(() => {
+        //             console.log(this.name);
+        //         }, 1000);
+        //     }
+        // };
+
+        // person.Name();
+
+        //Task - 15
+
+        // let obj = {
+        //     UserName: "Kavy",
+        //     email:"kavy1304@gmail.com",
+        //     disply: function name(params) {
+        //         console.log(this.UserName+ " " + this.email);
+
+        //     }
+        // }
+
+        // obj.disply()
+
+        //Task - 16
+
+        // let obj1 = {
+        //     show: function name(params) {
+        //         console.log(this.name);
+        //     }
+        // }
+
+        // let obj2 = {
+        //     name: "Kavy",
+        //     age: 19
+        // }
+
+        // obj1.show.call(obj2);
+
+        //task - 17
+
+        // let person = {
+        //     name: "Het",
+
+        //     show: function () {
+        //         console.log(this.name);
+        //     }
+        // };
+
+        // let student = {
+        //     name: "Raj"
+        // };
+
+        // let boundFun = person.show.bind(student);
+
+        // boundFun();  
+
+        //Task - 18
+
+        // let person = {
+        //     name: "Dhruv",
+
+        //     show: () =>{
+
+        //         function inner() {
+        //             console.log(this.name);
+        //         }
+
+        //         inner();
+        //     }
+        // };
+
+        // person.show();
+
+
+        //Task - 19
+
+        // let person = {
+        //     name: "Dhruv",
+
+        //     show() {
+
+        //         const inner = () => {
+        //             console.log(this.name);
+        //         }
+
+        //         inner();
+        //     }
+        // };
+
+        // person.show();
+
+        
+
+    </script>
+</body>
+
+</html>
